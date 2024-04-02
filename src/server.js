@@ -12,7 +12,7 @@ const init = async () => {
     },
   });
 
-  server.routes = routes;
+  server.route(routes);
 
   await server.start();
   console.log(`Server berjalan di ${server.info.uri}`);
